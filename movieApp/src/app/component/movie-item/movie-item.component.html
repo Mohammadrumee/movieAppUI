@@ -10,9 +10,11 @@
 
 <ng-template #elseBlock>
     <div class="list-group-item list-group-item-action">
-        <a class="alert-link"  routerLink="/index/movies/{{ movieItem._id }}">
+        <button type="button" class="btn btn-danger btn btn-primary btn-floating me-2" 
+        (click)="removeMovieWatchList(movieItem)"><b>X</b>
+        </button>
+        <a class="alert-link" class="mx-auto"  routerLink="/index/movies/{{ movieItem._id }}">
             {{ movieItem.name }}
         </a>
-        <button type="button" class="btn btn-dark" (click)="removeMovieWatchList(movieItem)">X</button>
     </div>
 </ng-template>
