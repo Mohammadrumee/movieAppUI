@@ -1,0 +1,18 @@
+<div *ngIf="watchList.name == ''; then thenBlock else elseBlock"></div>
+
+
+<ng-template #thenBlock>
+    <a class="list-group-item list-group-item-action" routerLink="/index/movies/{{ movieItem._id }}">
+        {{ movieItem.name }}
+    </a>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <div class="list-group-item list-group-item-action">
+        <a class="alert-link"  routerLink="/index/movies/{{ movieItem._id }}">
+            {{ movieItem.name }}
+        </a>
+        <button type="button" class="btn btn-dark" (click)="removeMovieWatchList(movieItem)">X</button>
+    </div>
+</ng-template>
