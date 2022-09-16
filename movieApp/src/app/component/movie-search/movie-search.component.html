@@ -92,7 +92,11 @@
         <tr>
             <!-- <app-movie-item [movieItem]="movie"></app-movie-item> -->
             <th scope="row">{{i + 1}}</th>
-            <td>{{search.name}}</td>
+            <!-- <td>{{search.name}}</td> -->
+                <a class="list-group-item" routerLink="/index/movies/{{ search._id }}">
+                    {{ search.name }}
+                </a>
+            
             <td>{{search.genre}}</td>
             <td>{{search.movieLength}}</td>
             <td>{{search.rating}}</td>
