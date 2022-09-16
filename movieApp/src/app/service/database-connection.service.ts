@@ -13,8 +13,8 @@ export class DatabaseConnectionService {
 
   movies : Observable<Movie> | any = [];
 
-  getAllMovieList(): Observable<Movie>{
-    return this.httpClient.get<Movie>(environment.apiDBEndpoint);
+  getAllMovieList(): Observable<Movie[]>{
+    return this.httpClient.get<Movie[]>(environment.apiDBEndpoint);
   }
 
   getMovieById(_id :string) : Observable<Movie> {

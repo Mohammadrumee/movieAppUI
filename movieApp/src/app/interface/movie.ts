@@ -4,7 +4,7 @@ export interface Movie {
     name        :string,
     description :string,
     genre       :string,
-    length      :number,
+    movieLength :number,
     rating      :number,
     watchlist   :boolean
 }

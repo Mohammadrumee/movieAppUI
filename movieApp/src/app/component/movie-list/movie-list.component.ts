@@ -15,11 +15,8 @@ export class MovieListComponent implements OnInit {
 
   movies : Observable<Movie> | any = [];
 
-  show :boolean = false;
-  
   ngOnInit(): void {
     this.getAllMovieList();
-    this.show = true;
   }
 
   getAllMovieList(): void {

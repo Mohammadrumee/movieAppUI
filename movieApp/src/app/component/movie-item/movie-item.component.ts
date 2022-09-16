@@ -15,7 +15,7 @@ export class MovieItemComponent implements OnInit {
     name: '',
     description: '',
     genre: '',
-    length: 0,
+    movieLength: 0,
     rating: 0,
     watchlist: false
   };
@@ -26,7 +26,7 @@ export class MovieItemComponent implements OnInit {
     name: '',
     description: '',
     genre: '',
-    length: 0,
+    movieLength: 0,
     rating: 0,
     watchlist: false
   };
