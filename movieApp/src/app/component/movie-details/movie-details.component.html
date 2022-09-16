@@ -9,6 +9,8 @@
       <h5 class="card-title">{{movieDetail.name}}</h5>
       <h6 class="card-subtitle mb-2 text-muted text-uppercase font-italic">{{movieDetail.genre}}</h6>
       <p class="card-text">{{movieDetail.description}}</p>
+      <p class="card-text">Lenght :{{movieDetail.movieLength}} <i>hours</i></p>
+      <p class="card-text">Rating : {{movieDetail.rating}}</p>
 
 
       <p class="card-text" *ngIf="movieDetail.watchlist == false; else elseBlock">
@@ -16,7 +18,7 @@
       </p>
       <ng-template #elseBlock>
         <p class="card-text">
-          <button type="button" class="btn btn-dark btn-rounded">Watchlist</button>
+          <!-- <button type="button" class="btn btn-dark btn-rounded">Watchlist</button> -->
         </p>
       </ng-template>
     </div>

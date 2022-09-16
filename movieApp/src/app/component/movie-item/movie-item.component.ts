@@ -40,11 +40,6 @@ export class MovieItemComponent implements OnInit {
 
   @Output() removeMovieEvent = new EventEmitter<Movie>();
 
-  // removeMovieWatchList(movie : Movie){
-  //   this.databaseService.removeWatchList(movie);
-  //   this.router.navigate(['index/watchlist']);
-  // }
-
   removeMovieWatchList(movie: Movie){
     this.removeMovieEvent.emit(movie);
   }
